@@ -1,0 +1,67 @@
+
+#1
+properties > symbology > categorized (vegdesc)
+
+select features by value (vegdesc – mixed trees)
+vector > analysis tools > basics statistics for fields (selected features only, area_km2)
+sum: 189273.33
+
+//lub trees_mixed > field calculator > sum(area_km2)
+
+
+#2
+select features by value (vegdesc)
+layer > export > save selected features as (esri shapefile)
+
+
+#3
+select region with name Matanuska-Susitna
+sum line lengths
+
+
+#4
+select features (use = military)
+save selected features as shp
+field calculator > mean(elev) (593,25) [zad4_1]; count (11 airports) [zad4_2]
+
+select features (elev > 1400) [zad4_3]
+layer > toggle editing > delete selected
+field calculator > count (10 airports – 1 deleted) [zad4_4]
+
+
+#5 
+select features from regions > name = Bristol Bay
+select features from popp (f_codedesc = Building)
+save selected features as shp (popp_buildings)
+
+select features from regions > name = Bristol Bay
+vector > research tools > select by location (popp_buildings intersect regions (selected features only)) [zad5_1]
+save selected features as shp (buildings_bristolbay)
+
+basic statistics for fields (buildings_bristolbay)
+count: 5 [zad5_2]
+
+vector > geoprocessing tools > buffer (rivers, 100 km)
+select by location (buildings_bristolbay are within buffered_rivers100km) [zad5_3]
+save selected features as shp 
+basic statistics for fields (count: 5) 
+
+#6
+vector > analysis tools > line intersections
+field calculator > count (8)
+
+
+#7
+vector > geometry tools > extract vertices
+
+
+#8
+vector > geoprocessing tools > 
+buffer (for airports and railroads)
+difference (buffered_airports - buffered_railroads)
+clip (regions and difference)
+
+
+#9
+vector > geometry tools > simplify
+
