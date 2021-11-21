@@ -46,6 +46,7 @@ select by location (buildings_bristolbay are within buffered_rivers100km) [zad5_
 save selected features as shp 
 basic statistics for fields (count: 5) 
 
+
 #6
 vector > analysis tools > line intersections
 field calculator > count (8)
