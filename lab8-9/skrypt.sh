@@ -51,9 +51,9 @@ log () {
 	TIMESTAMP_HMS=`date +'%m-%d-%Y %H:%M:%S'`
 	if [ "$1" -eq "0" ]
 	then
-	    echo "[${TIMESTAMP_HMS}] "$2" – succesful " >> ${LOG_FILE}
+	    echo "[${TIMESTAMP_HMS}] "$2" – successful " >> ${LOG_FILE}
 	else
-		echo "[${TIMESTAMP_HMS}] "$2" – unsuccesful " >> ${LOG_FILE}
+		echo "[${TIMESTAMP_HMS}] "$2" – unsuccessful " >> ${LOG_FILE}
 	fi
 }
 

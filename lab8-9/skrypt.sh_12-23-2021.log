@@ -1,0 +1,13 @@
+Log File - 12-23-2021 12:02:16
+[12-23-2021 12:02:16] Downloading data from Customers_Nov2021.csv_URL – successful 
+[12-23-2021 12:02:16] Unzipping data – successful 
+[12-23-2021 12:02:16] File validation: removing empty lines – successful 
+[12-23-2021 12:02:16] File validation: finding new customers – successful 
+[12-23-2021 12:02:17] Creating table customers_400803 if not exists – successful 
+[12-23-2021 12:02:17] Inserting data from CSV file to the table customers_400803 – successful 
+[12-23-2021 12:02:17] Moving processed file – successful 
+[12-23-2021 12:02:17] Sending first email – successful 
+[12-23-2021 12:02:18] Creating table best_customers_400803 – successful 
+[12-23-2021 12:02:18] Exporting table best_customers_400803 to CSV – successful 
+[12-23-2021 12:02:18] Compressing best_customers_400803.csv file – successful 
+[12-23-2021 12:02:18] Sending second email – successful 
