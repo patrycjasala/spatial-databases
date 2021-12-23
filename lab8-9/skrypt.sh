@@ -1,15 +1,15 @@
 #!/bin/bash
+#
+# Created by Patrycja Sala on 15.12.2021
+#
 
-# # # # # # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # # # # # # # 
-# Created by Patrycja Sala on 15.12.2021 											 #
-#																					 #	
-# Automation of spatial data processing												 #
-#																					 #
-# This script provides downloading file with new customers data from URL, comparing  # 
-# with existing data and inserting correct data to PostgreSQL database.				 #
-# It finds the best customers based on distance from given location and sends 		 #
-# reports about data and compressed csv file via email.								 #
-# # # # # # # # # # # # # # # # # # # # ## # # # # # # # # # # # # # # # # # # # # # # 
+# Automation of spatial data processing
+
+# This script provides downloading file with new customers data from URL, comparing
+# with existing data and inserting correct data to PostgreSQL database.
+# It finds the best customers based on distance from given location and sends
+# reports about data and compressed csv file via email.
+
 
 #variables
 
